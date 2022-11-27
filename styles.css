@@ -1,0 +1,57 @@
+body{
+	background-image: linear-gradient(red, orange, pink);
+	/* background-image: repeating-linear-gradient(red, orange 10%, pink 20%); */
+}
+
+.title{
+	padding-top: 65px;
+}
+
+/* Nav Bar CSS */
+.navbar-brand {
+	padding-bottom: 2px;
+	/* border-bottom: 2px solid #4682b4; */
+}
+
+/* End Nav Bar CSS */
+
+/* About CSS */
+h1 {
+	color: white;
+}
+.about {
+	color: white;
+}
+strong {
+	color: #4682b4;
+}
+
+i {
+	color: gray;
+}
+
+
+/* End About CSS */
+
+/* Button CSS */
+.subButton {
+	text-align: center;
+}
+
+/* End Button CSS */
+
+/* Accordion CSS */
+.accordion {
+	background-color: #4682b4;
+}
+
+b {
+	color: #4682b4;
+}
+
+.accordion-body {
+	color: gray;
+}
+
+/* End Accordion CSS */
+
