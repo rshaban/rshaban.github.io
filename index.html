@@ -20,7 +20,7 @@
 	
 <!-- Navigation-->
 <nav class="navbar fixed-top navbar-dark bg-dark justify-content-left">
-    <a class="navbar-brand" href="index1.html">Don't Get Hacked Password Checker</a>
+    <a class="navbar-brand" href="index.html">Don't Get Hacked Password Checker</a>
 </nav>
 
 
@@ -52,19 +52,18 @@
   </div>
 	
 <!-- Password Input -->
-<form action="">
+<form id="passForm">
   <div class="mb-2 pt-4">
     <input type="password" class="form-control" id="passwordInput" placeholder="Enter Your Password: ">
-
-    <!-- need field for entropy, charset selection/codified -->
   </div>
   <div class="subButton">
-  <button type="submit" class="btn btn-secondary">Submit</button>
+    <button type="submit" class="btn btn-secondary" onclick="do_check()">Submit</button>
   </div>
   <br/>
   <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 0%"></div>
   </div>
+  <br/>
   <div id="feedbackDetect"></div>
   <br/>
   <div id="feedbackSuggest"></div>
