@@ -16,12 +16,6 @@ const entropy = str => {
 
 // truncated do_check for speedy feedback as the user types
 function check(){
-    upper = false;
-    lower = false;
-    num = false;
-    other = false;
-    count = 0;
-    
     // remove parentheses for proper regex parsing
     password = document.querySelector("#passwordInput").value;
     var validatedPassword = password.replace(/\(|\)/g, "!")
@@ -29,24 +23,6 @@ function check(){
     // update password strength bar
     document.querySelector(".progress-bar").style.width = "" +
         String((20 * entropy(validatedPassword))) + "%"
-
-
-    // find out what characters are in the password
-    passwordList = password.split("")
-    passwordList.forEach(ch => {
-        count++;
-        if (!lower && lowercase.includes(ch)){
-            lower = true;
-        }
-        else if (!upper && uppercase.includes(ch)){
-            upper = true;
-        }
-        else if (!num && number.includes(ch)){
-            num = true;
-        } else {
-            other = true;
-        }
-    });
 }
 
 function do_check(){
