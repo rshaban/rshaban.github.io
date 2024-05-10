@@ -1,0 +1,123 @@
+@charset "utf-8";
+body{
+    color: #282828;
+}
+.noselect { /* Clicking rapidly on stuff will highlight text. This stops that. */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                       supported by Chrome, Edge, Opera and Firefox */
+}
+.nav-item a{
+    color: #fff;;
+    font-family: 'Antapani', Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5vmax;
+    margin: .7vmin;
+}
+.nav-item a:hover{
+    color: var(--bmGold);
+}
+.nav-item a i{
+    transition: all .15s ease-in-out;
+    color: #fff;
+    width: 3vmax;
+    margin: .5vmin;
+}
+.nav-item a i:hover{
+    color: var(--bmGold);
+}
+.navbar-toggler i{
+    color: #fff;
+    font-size: 4vmax;
+}
+.descText{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.boldText{
+    font-family: "museo-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.hoverFade{
+    cursor: pointer;
+    transition: all .382s ease-in-out;
+}
+.hoverFade:hover{
+    opacity: 0;
+}
+.hoverGold{
+    cursor: pointer;
+    transition: all .382s ease-in-out;
+    background-color: var(--bmGreen);
+}
+.hoverGold:hover{
+    background-color: var(--bmGold);
+}
+
+/* The only thing that works apparently */
+div div div div div a .serviceImg{
+    transition: opacity .382s ease-in-out;
+}
+
+div div div div div a:hover .serviceImg{
+    opacity:0;
+}
+div div div div div a:hover .serviceText{
+    opacity: 1;
+}
+.serviceText{
+    color: #222;
+    opacity: 0;
+    font-size: 3vw;
+}
+
+
+.service-carousel {
+    /* any dimensions are fine, it can be responsive with max-width */
+    height: 75vh;
+}
+  
+.service-carousel-inner {
+    /* make sure your .items will get correct height */
+    height: 100%;
+    border-radius: 50px;
+}
+  
+.service-carousel-item {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+.service-carousel-item img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.contactChild{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vmin;
+    text-align: center;
+}
+.contactChild img{
+    width: clamp(50px, 18vw, 300px);
+}
+.officeHours{
+    margin:auto;
+}
+.officeHours, .officeHours th, .officeHours td{
+    border: 2px solid black;
+    font-family: 'Antapani', sans-serif;
+    font-size: 1vmax;
+    padding: 7px;
+}
