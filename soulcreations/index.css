@@ -28,6 +28,50 @@
     color: var(--soulWhite);
 }
 
+.heroImg{
+    position: absolute;
+    background: url('res/collage.webp') center/contain repeat-y;
+    margin-left: 10vw;
+    margin-right: 60vw;
+    height: 400vh;
+    width: 30vw;
+    animation: hero 38.2s linear infinite;
+}
+
+.heroTxt{
+    color: var(--soulBright);
+    justify-content: center;
+    align-items: center;
+    font-size: 12vmax;
+    line-height: 10vmax;
+    margin-top: 25vh;
+    margin-left: 45vw;
+    font-weight: bold;
+}
+
+.pane{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 105vh;
+    scroll-behavior: smooth;
+    background-color: var(--soulLightBlue);
+    overflow: hidden;
+}
+
+.separatorLightDark{
+    height: 10vh;
+    width: 100vw;
+    background: linear-gradient(0deg, var(--soulLightBlue) 0%, var(--soulDarkBlue) 100%);
+}
+
+.separatorDarkLight{
+    height: 10vh;
+    width: 100vw;
+    background: linear-gradient(0deg, var(--soulDarkBlue) 0%, var(--soulLightBlue) 100%);
+}
+
 @keyframes hero {
     from { transform: translate(0, 0px); }
     to   { transform: translate(0, -202.5vh); }    
