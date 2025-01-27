@@ -72,6 +72,14 @@
     background: linear-gradient(0deg, var(--soulDarkBlue) 0%, var(--soulLightBlue) 100%);
 }
 
+.footer{
+    display: flex;
+    height: 10vh;
+    background-color: var(--soulDarkBlue);
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes hero {
     from { transform: translate(0, 0px); }
     to   { transform: translate(0, -202.5vh); }    
