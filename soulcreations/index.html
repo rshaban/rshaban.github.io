@@ -10,7 +10,8 @@
         <!-- museo sans -->
         <!-- <link rel="stylesheet" type="text/css" href="https://use.typekit.net/tln6exz.css"/> -->
         <!-- Bootstrap CSS only | https://getbootstrap.com/docs/5.0 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body style="margin: 0; background-color: var(--soulDarkBlue);">
@@ -21,7 +22,7 @@
         background: linear-gradient(180deg, var(--soulDarkBlue) 0%, var(--soulDarkBlue) 85%, rgba(0,0,0,0) 100%);">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#top">
-                    <img src="res/soulLogo.png" alt="Soul Creations By Ry Logo" style="height: 3vmax;">
+                    <img src="res/soulLogo.webp" alt="Soul Creations By Ry Logo" style="height: 3vmax;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,39 +76,59 @@
         </nav>
 
         <!-- Hero -->
-        <div style="display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        height: 105vh;
-        scroll-behavior: smooth;
+        <div style="
         background-color: var(--soulLightBlue);
-        overflow: hidden;">
-            <div id="top" style="position: relative; top: -5.5vmax;"></div>
-            <div style="
-            color: var(--soulWhite);
-            justify-content: center;
+        height: 105vh;
+        overflow: hidden;
+        z-index: 1;">
+            <div style="display: flex;
+            flex-direction: column;
             align-items: center;
-            font-size: 12vmax;
-            line-height: 10vmax;
-            margin-top: 25vh;
-            margin-left: 45vw;
-            font-weight: bold;">
-                SHE MAKES ART
+            position: relative;
+            height: 105vh;
+            background-color: var(--soulLightBlue);">
+                <div id="top" style="position: relative; top: -5.5vmax;"></div>
+                <div style="
+                color: var(--soulBright);
+                justify-content: center;
+                align-items: center;
+                font-size: 12vmax;
+                line-height: 10vmax;
+                margin-top: 25vh;
+                margin-left: 45vw;
+                font-weight: bold;">
+                    SHE MAKES ART
+                </div>
+                <div style="position:absolute;">
+                    <div style="
+                    background-image: url('res/collage.webp');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: repeat-y;
+                    margin-left: 10vw;
+                    margin-right: 60vw;
+                    height: 400vh;
+                    width: 30vw;
+                    animation: hero 38.2s linear infinite;
+                    "></div>
+                </div>
             </div>
         </div>
 
         <!-- crafts -->
+        <div style="
+        position: absolute;
+        height: 10vh;
+        top: 95vh;
+        z-index: 2;
+        width: 100vw;
+        background: linear-gradient(0deg, var(--soulDarkBlue) 0%, rgba(0,0,0,0) 100%);"></div>
         <div style="display: flex;
         flex-direction: column;
         align-items: center;
         scroll-behavior: smooth;
         position: relative;
         height: 105vh;">
-            <div style="
-            height: 10vh;
-            width: 100vw;
-            background: linear-gradient(0deg, var(--soulDarkBlue) 0%, var(--soulLightBlue) 100%);"></div>
             <div id="crafts" style="position: relative; top: -3vmax;"></div>
             <div class="mt-5 fontHeader">crafts</div>
             <div style="display: flex;
@@ -147,10 +168,9 @@
         display: flex;
         height: 10vh;
         background-color: var(--soulDarkBlue);
-        color: var(--soulWhite);
         justify-content: center;
         align-items: center;">
-            <a href="../index.html">powered with care</a>
+            <a href="../index.html">crafted with care</a>
         </div>
 
         <!-- Bootstrap JS + Popper -->

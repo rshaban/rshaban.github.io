@@ -3,7 +3,8 @@
 :root{
 	--soulDarkBlue: #01558B;
     --soulLightBlue: #017FA7;
-    --soulWhite: #ccc;
+    --soulBright: #ccc;
+    --soulWhite: white;
 }
 
 html{
@@ -14,16 +15,16 @@ a{
     text-decoration: none !important;
 }
 a:link{
-    color: var(--soulWhite);
+    color: var(--soulBright);
 }
 a:hover{
-    color: var(--soulLightBlue) !important;
+    color: var(--soulWhite) !important;
 }
 a:active{
     color: var(--soulDarkBlue);
 }
 a:visited{
-    color: var(--soulWhite);
+    color: var(--soulBright);
 }
 
 .nav-link, .navbar-brand{
@@ -33,7 +34,7 @@ a:visited{
 }
 
 .fontHeader{
-    color: var(--soulWhite);
+    color: var(--soulBright);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 3vw;
