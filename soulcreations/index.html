@@ -13,88 +13,154 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     </head>
     <body class="noselect" style="margin: 0; background-color: var(--soulDarkBlue);">
+        <div id="top"></div>
+
+
         <!-- sticky header -->
-        <nav class="navbar fixed-top navbar-expand-lg"
-        style="z-index: 5;
-        background-color: var(--soulDarkBlue);
-        background: linear-gradient(180deg, var(--soulDarkBlue) 0%, var(--soulDarkBlue) 85%, rgba(0,0,0,0) 100%);">
+        <!-- TODO: remove collapse, make mobile friendly -->
+        <nav class="navbar fixed-top navbar-expand soulNav">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#top">
-                    <img src="res/soulLogo.webp" alt="Soul Creations By Ry Logo" style="height: 3vmax;">
-                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav w-100 mb-2 mb-lg-0"
-                    style="align-items: center; justify-content: center;">
-                        <div style="display: flex; align-items: center; justify-content: center; margin-bottom: .4vw;">
-                            <div class="nav-side"
-                            style="justify-content: right;">
-                                <a href="#crafts" class="nav-inside">crafts</a>
-                            </div>
-                            <div style="font-size: 2vw; 
-                                        font-weight: lighter; 
-                                        color: var(--soulBright);
-                                        margin-bottom: .25vw;
-                                        padding: 1vmin;">
-                                |
-                            </div>
-                            <div class="nav-side"
-                            style="justify-content: left;">
-                                <a href="#bio" class="nav-inside">about</a>
-                            </div>
+                    <ul class="navbar-nav justify-content-center w-100 mb-2">
+                        <div class="navbar-text" style="width: 10rem; text-align: end;">
+                            <a href="#shop" class="nav-link">shop</a>
                         </div>
+                        <a class="nav-link mx-3" href="#top">
+                            <img src="res/soulLogo.webp" alt="Logo, Soul Creations By Ry" style="height: 3vmax;">
+                        </a>
+                        <div class="navbar-text" style="width: 10rem;">
+                            <a href="#bio" class="nav-link">about</a>
+                        </div>
+
                     </ul>
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/soulcreationsbyry/"><i class="bi bi-instagram"></i></a>
-                        </li>
-                        <li class="nav-item"> <!--TODO: ADD EMAIL-->
-                            <a class="nav-link" href="mailto:"><i class="bi bi-envelope"></i></a>
-                        </li>
-                    </ul>
-                    <div class="nav-item" style="position: absolute;">
-                        <a class="nav-link" href="../index.html" style="text-align: center;">Back to Portfolio</a>
-                    </div>
                 </div>
             </div>
         </nav>
+        <div class="d-inline-flex navbar-text">
+            <a class="nav-link m-2 navAddition" href="../index.html">Back to Portfolio</a>
+        </div>
+
 
         <!-- hero -->
-        <div class="pane" style="z-index: 1;">
+        <div class="pane painContain">
             <div class="pane">
-                <div id="top" style="position: relative; top: -5.5vmax;"></div>
-                <div class="heroTxt">
-                    SHE MAKES ART
-                </div>
+                <div class="heroTxt py-5">art with soul</div>
+                <div class="heroLogo"></div>
                 <div class="heroImg"></div>
             </div>
+            <div class="separatorHeroShop"></div>
         </div>
-        <div class="separatorDarkLight" style="
-        position: absolute;
-        top: 95vh;
-        z-index: 2;
-        background: linear-gradient(0deg, var(--soulDarkBlue) 0%, rgba(0,0,0,0) 100%);"></div>
 
-        <!-- crafts -->
-        <div class="pane" style="background-color: var(--soulDarkBlue);">
-            <div id="crafts" style="position: relative; top: -3vmax;"></div>
-            <div class="mt-5 fontHeader">crafts</div>
+
+        <!-- shop -->
+        <!-- TODO: make responsive shopTiles for mobile and fix shoptiledetail mobile layout -->
+        <div class="pane shopPane">
+            <div id="shop"></div>
+            <div class="container-fluid">
+                <div class="row justify-content-evenly px-5">
+                    <div class="col-6 col-md-3">
+                        <div class="shopTile mx-auto">
+                            <a href="shop.html" class="shopOverlay"></a>
+                            <img class="shopImg"
+                            src="res/turtlePink.webp"
+                            alt="Pink crocheted turtle">
+                            <div class="shopTileDetails">
+                                Name: Shelly<br/>
+                                Species: Pinkus Turtlus<br/>
+                                Favorite food: Unshelled Roasted Pistachios (carrots on the side)<br/>
+                            </div>
+                            <a href="shop.html" class="shopLink">
+                                Shop all
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shopTile mx-auto">
+                            <a href="shop.html" class="shopOverlay"></a>
+                            <img class="shopImg"
+                            src="res/hummingBird.webp"
+                            alt="Crocheted hummingbird">
+                            <div class="shopTileDetails">
+                                Name: Beverly<br/>
+                                Species: Trochilus Lesbiinae<br/>
+                                Favorite food: Sugar water<br/>
+                            </div>
+                            <a href="shop.html" class="shopLink">
+                                Shop all
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shopTile mx-auto">
+                            <a href="shop.html" class="shopOverlay"></a>
+                            <img class="shopImg"
+                            src="res/pigsTogether.webp"
+                            alt="Two crocheted pigs">
+                            <div class="shopTileDetails">
+                                Name: The Albertsons<br/>
+                                Species: Pinkus Oinkus<br/>
+                                Favorite food: Mashed potatoes with cheese<br/>
+                            </div>
+                            <a href="shop.html" class="shopLink">
+                                Shop all
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="shopTile mx-auto">
+                            <a href="shop.html" class="shopOverlay"></a>
+                            <img class="shopImg"
+                            src="res/monsterPurple.webp"
+                            alt="Purple crocheted stuffed monster">
+                            <div class="shopTileDetails">
+                                Name: Harold<br/>
+                                Species: Oogly Boogly<br/>
+                                Favorite food: Fire-roasted Onions<br/>
+                            </div>
+                            <a href="shop.html" class="shopLink">
+                                Shop all
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="shop.html" class="shopLink m-5 p-3 px-5">
+                Shop all
+            </a>
         </div>
-        <div class="separatorLightDark"></div>
+        <div class="separatorDarkLight"></div>
+
 
         <!-- bio -->
-        <div class="pane">
+        <div class="pane" style="
+        background-color: var(--soulDarkBlue);">
             <div id="bio" style="position: relative; top: -3vmax;"></div>
             <div class="mt-5 fontHeader">bio</div>
+            <div class="container-fluid">
+                <div class="row justify-content-center w-75 mx-auto pt-5">
+                    <div class="col-6 fontSubHeader">
+                        <img loading="lazy" src="rileyPortrait.webp" alt="Portrait of Riley, shop owner">
+                    </div>
+                    <div class="col-6 fontSubHeader">
+                        This is riley aka ry ry aka riles. <br/>
+                        she makes art. <br/>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- footer -->
-        <div class="separatorDarkLight"></div>
         <div class="footer">
-            <a href="../index.html">crafted with care</a>
+            <div class="d-flex">
+                <a class="col nav-link" href="https://www.instagram.com/soulcreationsbyry/"><i class="bi bi-instagram"></i></a>
+                <a class="col nav-link mx-1" href="mailto:"><i class="bi bi-envelope"></i></a>                        
+                </div>
+            </div>
         </div>
 
         <!-- Bootstrap JS + Popper -->

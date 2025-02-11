@@ -1,52 +1,46 @@
 @charset "utf-8";
 
-.noselect { /* Clicking rapidly will highlight text. This stops that. */
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                       supported by Chrome, Edge, Opera and Firefox */
+.soulNav{
+    z-index: 5;
+    background-color: var(--soulDarkBlue);
+    background: linear-gradient(180deg, var(--soulDarkBlue) 0%, var(--soulDarkBlue) 85%, rgba(0,0,0,0) 100%);
 }
-.nav-side{
+
+.navAddition{
     color: var(--soulBright);
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 1.5vmax;
-    display: flex;
-    justify-content: left;
-    margin: 1vh;
-    width: 40vw;
-    line-height: normal;
-}
-.navbar-toggler i{
-    color: var(--soulBright);
-    font-size: 4vmax;
-}
-.nav-inside:hover, a.nav-link:hover{
-    color: var(--soulWhite);
+    z-index: 1100;
+    position: fixed;
 }
 
 .heroImg{
     position: absolute;
+    margin-right: 32.5vw;
+    z-index: 3;
     background: url('res/collage.webp') center/contain repeat-y;
-    margin-left: 10vw;
-    margin-right: 60vw;
-    height: 400vh;
+    height: 450vh;
     width: 30vw;
     animation: hero 38.2s linear infinite;
 }
 
+.heroLogo{
+    z-index: 2;
+    position: absolute;
+    background: url(res/soulBackground.webp) center/cover;
+    height: 100vh;
+    width: 150vw;
+    overflow: hidden;
+}
+
 .heroTxt{
     color: var(--soulBright);
-    justify-content: center;
-    align-items: center;
-    font-size: 12vmax;
-    line-height: 10vmax;
-    margin-top: 25vh;
-    margin-left: 45vw;
+    font-size: clamp(8vmax, 10vw ,12vmax);
+    line-height: 27.5vh;
     font-weight: bold;
+    z-index: 3;
+    position: relative;
+    margin-left: 32.5vw;
+    width: 30vw;
 }
 
 .pane{
@@ -54,10 +48,26 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 105vh;
+    height: 100vh;
+    width: 100vw;
     scroll-behavior: smooth;
     background-color: var(--soulLightBlue);
     overflow: hidden;
+}
+
+.painContain{
+    z-index: 1;
+    height: 110vh;
+}
+
+.shopPane{
+    background-color: var(--soulLightBlue);
+    z-index: 4;
+    height: auto;
+}
+#shop{
+    position: absolute;
+    top: -20vh;
 }
 
 .separatorLightDark{
@@ -70,6 +80,99 @@
     height: 10vh;
     width: 100vw;
     background: linear-gradient(0deg, var(--soulDarkBlue) 0%, var(--soulLightBlue) 100%);
+    z-index: 4;
+}
+
+.separatorHeroShop{
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    top: 90vh;
+    z-index: 4;
+    background: linear-gradient(0deg, var(--soulLightBlue) 0%, rgba(0,0,0,0) 100%)
+}
+
+.shopImg{
+    width: 20vw;
+    height: 20vw;
+}
+
+.shopTile{
+    width: 20vw;
+    height: 20vw;
+    margin:1vw;
+    overflow: hidden;
+}
+
+.shopOverlay{
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    background-color: var(--soulDark);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .382s ease-in-out;
+}
+.shopTile:hover .shopOverlay{
+    visibility: visible;
+    opacity: .95;
+}
+
+.shopTileDetails{
+    color: var(--soulBright);
+    position: relative;
+    top: -20vw;
+    left: -20vw;
+    width: 16vw;
+    height: 14vw;
+    margin: 2vw;
+    overflow: wrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .382s ease-in-out;
+    font-weight: bold;
+    pointer-events: none;
+}
+.shopTile:hover .shopTileDetails{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.shopTile .shopLink{
+    position: absolute;
+    background-color: var(--soulBright);
+    color: var(--soulDark) !important;
+    font-weight: bold;
+    transition: all .382s ease-out;
+    width: 16vw;
+    height: 0vw;
+    top: 16vw;
+    margin-left: 2vw;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopTile:hover .shopLink{
+    height: 3vw;
+    visibility: visible;
+    opacity: 1;
+}
+.shopTile:hover .shopLink:hover{
+    color: var(--soulBright) !important;
+}
+
+.shopLink{
+    background-color: var(--soulBright);
+    color: var(--soulDark) !important;
+    font-weight: bold;
+    transition: all .382s ease-out;
+}
+
+.shopLink:hover{
+    background-color: var(--soulDarkBlue);
+    color: var(--soulBright);
 }
 
 .footer{

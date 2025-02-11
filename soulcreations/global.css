@@ -5,11 +5,22 @@
     --soulLightBlue: #017FA7;
     --soulBright: #ccc;
     --soulWhite: white;
+    --soulDark: rgba(20,20,20,.8);
+}
+
+.noselect { /* Clicking rapidly will highlight text. This stops that. */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                       supported by Chrome, Edge, Opera and Firefox */
 }
 
 html{
     scroll-behavior: smooth;
-    transition: all .382s ease-in-out;
+    transition: all .382s ease-out;
 }
 a{
     text-decoration: none !important;
@@ -21,7 +32,7 @@ a:hover{
     color: var(--soulWhite) !important;
 }
 a:active{
-    color: var(--soulDarkBlue);
+    color: var(--soulLightBlue);
 }
 a:visited{
     color: var(--soulBright);
@@ -42,7 +53,7 @@ a:visited{
 .fontSubHeader{
     color: var(--document-text-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.5vw;
 }
 .fontEvent{
