@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+:root{
+	--trustOrange: #F5A300;
+    --trustLightBlue: #00AEF5;
+    --trustDarkBlue: #0014F5;
+    --trustDark: rgba(20,20,20,.8);
+    --trustLight: #ccc;
+}
+
+.noselect { /* Clicking rapidly will highlight text. This stops that. */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                       supported by Chrome, Edge, Opera and Firefox */
+}
+
+html{
+    background-color: var(--trustLightBlue);
+    scroll-behavior: smooth;
+    transition: all .382s ease-out;
+}
+a{
+    text-decoration: none !important;
+}
+a:link{
+    color: var(--soulBright);
+}
+a:hover{
+    color: var(--soulWhite) !important;
+}
+a:active{
+    color: var(--soulLightBlue);
+}
+a:visited{
+    color: var(--soulBright);
+}
+
+.nav-link, .navbar-brand{
+    font-size: 1.5vmax;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+.trustNav{
+    z-index: 5;
+    background-color: var(--trustLightBlue);
+    /* background: linear-gradient(180deg, var(--soulDarkBlue) 0%, var(--soulDarkBlue) 85%, rgba(0,0,0,0) 100%); */
+}
+
+.navAddition{
+    color: var(--soulBright);
+    text-align: center;
+    z-index: 1100;
+    position: fixed;
+}
+.navAdditionEnd{
+    color: var(--soulBright);
+    text-align: center;
+    z-index: 1100;
+    position: fixed;
+    left: 85vw;
+}
+
+
+.fontHeader{
+    color: var(--soulBright);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+}
+.fontSubHeader{
+    color: var(--document-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+.fontEvent{
+    color: var(--document-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fontInfo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(15px, 1.15vmax, 40px);
+    color: #9F9F9F
+}
