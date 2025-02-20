@@ -1,0 +1,79 @@
+#itemsContainer{
+    background-color: var(--soulLightBlue);
+    margin-top: 17.5vh;
+}
+
+.shopOverlay{
+    background-color: var(--soulDark);
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+    transition: all .382s ease-in-out;
+}
+.shopTile:hover .shopOverlay{
+    visibility: visible;
+    opacity: .95;
+}
+
+.shopTileDetails{
+    color: var(--soulBright);
+    position: relative;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    padding: 10%;
+    overflow: wrap;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    transition: all .382s ease-in-out;
+    font-size: 1rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+.shopTile:hover .shopTileDetails{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.shopTile .shopLink{
+    position: absolute;
+    background-color: var(--soulBright);
+    color: var(--soulDark) !important;
+    font-weight: bold;
+    transition: all .382s ease-out;
+    width:80%;
+    height: 0vw;
+    top: 80%;
+    margin-left: 10%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shopTile:hover .shopLink{
+    height: 12.5%;
+    visibility: visible;
+    opacity: 1;
+}
+.shopTile:hover .shopLink:hover{
+    color: var(--soulBright) !important;
+}
+
+.shopLink{
+    background-color: var(--soulBright);
+    color: var(--soulDark) !important;
+    font-weight: bold;
+    transition: all .382s ease-out;
+}
+
+.shopLink:hover{
+    background-color: var(--soulDarkBlue);
+    color: var(--soulBright);
+}
