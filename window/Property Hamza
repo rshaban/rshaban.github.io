@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate Property Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dbeafe;
+            color: #1e3a8a;
+        }
+        header {
+            background: #3b82f6;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?cleaning,landscaping') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .section {
+            background: #93c5fd;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: #1e3a8a;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-box {
+            background: #60a5fa;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 30%;
+            margin: 10px;
+            color: #fff;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #3b82f6;
+            border-radius: 5px;
+            background: #bfdbfe;
+            color: #1e3a8a;
+        }
+        .contact-form button {
+            background: #2563eb;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button:hover {
+            background: #1e40af;
+        }
+        h2 {
+            color: #1e3a8a;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to Our Property Management Services
+    </header>
+    
+    <div class="hero">
+        Providing High-Quality, Hassle-Free Services
+    </div>
+    
+    <div class="container">
+        <section class="section">
+            <h2>About Us</h2>
+            <p>We specialize in delivering top-tier, hassle-free property management services, including pressure washing, landscaping, mobile detailing, and housekeeping. Our focus is on maintaining your property with minimal effort on your part while ensuring outstanding results.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="service-box">Property Maintenance</div>
+                <div class="service-box">Pressure Washing</div>
+                <div class="service-box">Mobile Detailing</div>
+                <div class="service-box">Housekeeping</div>
+                <div class="service-box">Landscaping</div>
+            </div>
+        </section>
+        
+        <section class="section contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Phone Number" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
