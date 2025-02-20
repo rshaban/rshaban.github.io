@@ -38,11 +38,30 @@ a:visited{
     color: var(--soulBright);
 }
 
-.nav-link, .navbar-brand{
-    font-size: 1.5vw;
-    font-weight: bold;
-    margin-bottom: 2vh;
+#top{
+    position: absolute;
+    top: 0;
 }
+.nav-link, .navbar-brand{
+    font-size: 2.5vmax;
+    font-weight: bold;
+}
+.navLogo{
+    width: 3vmax;
+    height: 3vmax;
+}
+.soulNav{
+    z-index: 5;
+    background-color: var(--soulDarkBlue);
+    background: linear-gradient(180deg, var(--soulDarkBlue) 0%, var(--soulDarkBlue) 85%, rgba(0,0,0,0) 100%);
+}
+/* .navAddition{
+    color: var(--soulBright);
+    text-align: center;
+    z-index: 1100;
+    position: fixed;
+} */
+
 
 .fontHeader{
     color: var(--soulBright);

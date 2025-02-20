@@ -1,25 +1,24 @@
 @charset "utf-8";
 
-.soulNav{
-    z-index: 5;
-    background-color: var(--soulDarkBlue);
-    background: linear-gradient(180deg, var(--soulDarkBlue) 0%, var(--soulDarkBlue) 85%, rgba(0,0,0,0) 100%);
+.heroCenterBound{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.navAddition{
-    color: var(--soulBright);
-    text-align: center;
-    z-index: 1100;
-    position: fixed;
+.heroCenter{
+    z-index: 4;
+    width: 75%;
 }
 
 .heroImg{
     position: absolute;
-    margin-right: 32.5vw;
     z-index: 3;
     background: url('res/collage.webp') center/contain repeat-y;
     height: 450vh;
-    width: 30vw;
+    width: 70vw;
     animation: hero 38.2s linear infinite;
 }
 
@@ -92,25 +91,11 @@
     background: linear-gradient(0deg, var(--soulLightBlue) 0%, rgba(0,0,0,0) 100%)
 }
 
-.shopImg{
-    width: 20vw;
-    height: 20vw;
-}
-
-.shopTile{
-    width: 20vw;
-    height: 20vw;
-    margin:1vw;
-    overflow: hidden;
-}
-
 .shopOverlay{
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
     background-color: var(--soulDark);
     visibility: hidden;
     opacity: 0;
+    z-index: 1;
     transition: all .382s ease-in-out;
 }
 .shopTile:hover .shopOverlay{
@@ -121,15 +106,17 @@
 .shopTileDetails{
     color: var(--soulBright);
     position: relative;
-    top: -20vw;
-    left: -20vw;
-    width: 16vw;
-    height: 14vw;
-    margin: 2vw;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    padding: 10%;
     overflow: wrap;
     visibility: hidden;
     opacity: 0;
+    z-index: 2;
     transition: all .382s ease-in-out;
+    font-size: 1rem;
     font-weight: bold;
     pointer-events: none;
 }
@@ -144,18 +131,19 @@
     color: var(--soulDark) !important;
     font-weight: bold;
     transition: all .382s ease-out;
-    width: 16vw;
+    width:80%;
     height: 0vw;
-    top: 16vw;
-    margin-left: 2vw;
+    top: 80%;
+    margin-left: 10%;
     visibility: hidden;
     opacity: 0;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .shopTile:hover .shopLink{
-    height: 3vw;
+    height: 12.5%;
     visibility: visible;
     opacity: 1;
 }
@@ -173,6 +161,13 @@
 .shopLink:hover{
     background-color: var(--soulDarkBlue);
     color: var(--soulBright);
+}
+
+.bioText{
+    color: var(--soulBright);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
 }
 
 .footer{

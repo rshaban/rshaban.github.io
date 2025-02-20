@@ -14,47 +14,38 @@
     </head>
     <body class="noselect" style="margin: 0; background-color: var(--soulDarkBlue);">
         <div id="top"></div>
-
-
         <!-- sticky header -->
-        <!-- TODO: remove collapse, make mobile friendly -->
         <nav class="navbar fixed-top navbar-expand soulNav">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav justify-content-center w-100 mb-2">
-                        <div class="navbar-text" style="width: 10rem; text-align: end;">
-                            <a href="#shop" class="nav-link">shop</a>
-                        </div>
-                        <a class="nav-link mx-3" href="#top">
-                            <img src="res/soulLogo.webp" alt="Logo, Soul Creations By Ry" style="height: 3vmax;">
-                        </a>
-                        <div class="navbar-text" style="width: 10rem;">
-                            <a href="#bio" class="nav-link">about</a>
-                        </div>
-
-                    </ul>
-                </div>
+                <ul class="navbar-nav justify-content-center w-100 mb-2">
+                    <div class="navbar-text" style="text-align: end; width: 7vw;">
+                        <a href="#shop" class="nav-link">shop</a>
+                    </div>
+                    <a class="nav-link mx-3" href="#top">
+                        <img src="res/soulLogo.webp" alt="Logo, Soul Creations By Ry" style="height: 3vmax;">
+                    </a>
+                    <div class="navbar-text" style="width: 7vw;">
+                        <a href="#bio" class="nav-link">about</a>
+                    </div>
+                </ul>
             </div>
         </nav>
-        <div class="d-inline-flex navbar-text">
+        <!-- <div class="d-inline-flex navbar-text">
             <a class="nav-link m-2 navAddition" href="../index.html">Back to Portfolio</a>
-        </div>
-
+        </div> -->
 
         <!-- hero -->
         <div class="pane painContain">
             <div class="pane">
-                <div class="heroTxt py-5">art with soul</div>
+                <div class="heroCenterBound">
+                    <img class="heroCenter" src="res/soulWriting.webp" alt="Logo, Soul Creations By Ry">
+                </div>
+                <!-- <div class="heroTxt py-5">art with soul</div> -->
                 <div class="heroLogo"></div>
                 <div class="heroImg"></div>
             </div>
             <div class="separatorHeroShop"></div>
         </div>
-
 
         <!-- shop -->
         <!-- TODO: make responsive shopTiles for mobile and fix shoptiledetail mobile layout -->
@@ -62,11 +53,10 @@
             <div id="shop"></div>
             <div class="container-fluid">
                 <div class="row justify-content-evenly px-5">
-                    <div class="col-12 col-md-3">
-                        <div class="shopTile mx-auto">
+                    <div class="col-9 col-lg-3 p-3">
+                        <div class="shopTile mx-auto ratio ratio-1x1">
                             <a href="shop.html" class="shopOverlay"></a>
-                            <img class="shopImg"
-                            src="res/turtlePink.webp"
+                            <img src="res/turtlePink.webp"
                             alt="Pink crocheted turtle">
                             <div class="shopTileDetails">
                                 Name: Shelly<br/>
@@ -78,11 +68,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="shopTile mx-auto">
+                    <div class="col-9 col-lg-3 p-3">
+                        <div class="shopTile mx-auto ratio ratio-1x1">
                             <a href="shop.html" class="shopOverlay"></a>
-                            <img class="shopImg"
-                            src="res/hummingBird.webp"
+                            <img src="res/hummingBird.webp"
                             alt="Crocheted hummingbird">
                             <div class="shopTileDetails">
                                 Name: Beverly<br/>
@@ -94,11 +83,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="shopTile mx-auto">
+                    <div class="col-9 col-lg-3 p-3">
+                        <div class="shopTile mx-auto ratio ratio-1x1">
                             <a href="shop.html" class="shopOverlay"></a>
-                            <img class="shopImg"
-                            src="res/pigsTogether.webp"
+                            <img src="res/pigsTogether.webp"
                             alt="Two crocheted pigs">
                             <div class="shopTileDetails">
                                 Name: The Albertsons<br/>
@@ -110,11 +98,10 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="shopTile mx-auto">
+                    <div class="col-9 col-lg-3 p-3">
+                        <div class="shopTile mx-auto ratio ratio-1x1">
                             <a href="shop.html" class="shopOverlay"></a>
-                            <img class="shopImg"
-                            src="res/monsterPurple.webp"
+                            <img src="res/monsterPurple.webp"
                             alt="Purple crocheted stuffed monster">
                             <div class="shopTileDetails">
                                 Name: Harold<br/>
@@ -135,19 +122,18 @@
         </div>
         <div class="separatorDarkLight"></div>
 
-
         <!-- bio -->
-        <div class="pane" style="
+        <div style="
         background-color: var(--soulDarkBlue);">
             <div id="bio" style="position: relative; top: -3vmax;"></div>
-            <div class="mt-5 fontHeader">bio</div>
             <div class="container-fluid">
                 <div class="row justify-content-center w-75 mx-auto pt-5">
-                    <div class="col-6 fontSubHeader">
-                        <!-- <img loading="lazy" src="rileyPortrait.webp" alt="Portrait of Riley, shop owner"> -->
-                    </div>
-                    <div class="col-6 fontSubHeader">
-                        
+                    <img loading="lazy" 
+                    src="res/rileyPortrait.webp" 
+                    alt="Portrait of Riley, shop owner" 
+                    class="col-12 col-md-5"/>
+                    <div class="col-12 col-md-5 bioText">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </div>
                 </div>
             </div>
@@ -157,7 +143,7 @@
         <div class="footer">
             <div class="d-flex">
                 <a class="col nav-link" href="https://www.instagram.com/soulcreationsbyry/"><i class="bi bi-instagram"></i></a>
-                <a class="col nav-link mx-1" href="mailto:"><i class="bi bi-envelope"></i></a>                        
+                <a class="col nav-link mx-1" href="mailto:soulcreationsbyry@gmail.com"><i class="bi bi-envelope"></i></a>                        
                 </div>
             </div>
         </div>
